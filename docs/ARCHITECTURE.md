@@ -1,7 +1,13 @@
 ﻿# Architecture
 
-## Purpose
-Describe the role of this repository in the XPS ecosystem.
+## Allowed responsibilities
+- Drive scaffolding
+- Sheets mirrors
+- Calendar orchestration
+- Gmail summaries
+- lightweight webhook bridge logic
 
-## Next step
-Replace this with the real architecture for this repo.
+## Forbidden
+- primary ingestion engine
+- primary CRM sync
+- primary data warehouse
