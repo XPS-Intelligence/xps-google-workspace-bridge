@@ -1,0 +1,19 @@
+# Environment
+
+## Required variables
+- `GOOGLE_WORKSPACE_PROJECT_ID`
+- `GOOGLE_WORKSPACE_CLIENT_EMAIL`
+- `GOOGLE_WORKSPACE_PRIVATE_KEY`
+- `GOOGLE_WORKSPACE_IMPERSONATED_USER`
+- `GOOGLE_DRIVE_ROOT_FOLDER_ID`
+- `GOOGLE_SHARED_DRIVE_ID`
+- `GOOGLE_CALENDAR_ID`
+- `GOOGLE_GMAIL_FROM`
+- `XPS_API_BASE_URL`
+- `XPS_API_TOKEN`
+
+## Rules
+- never hardcode service-account secrets
+- scope credentials to the minimum required Google APIs
+- keep the bridge stateless where possible
+- write operational truth back to the runtime API, not directly to shadow stores

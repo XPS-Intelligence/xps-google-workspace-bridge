@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate required docs
+        shell: bash
+        run: |
+          test -f README.md
+          test -f docs/ARCHITECTURE.md
+          test -f docs/WORKSPACE_MATCHUP.md
+          test -f docs/ENVIRONMENT.md
+          test -f docs/RUNBOOK.md
+          test -f docs/SYSTEM_MAP.md
